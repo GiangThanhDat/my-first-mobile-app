@@ -19,7 +19,8 @@
     "react-native-gesture-handler": "^1.10.3",
     "react-native-reanimated": "^2.2.0",
     "react-native-screens": "^3.3.0",
-    "react-native-web": "^0.16.3"
+    "react-native-web": "^0.16.3",
+    "react-native-wheel-of-fortune": "^1.5.4"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0"

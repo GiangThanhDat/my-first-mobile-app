@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, ScrollView, FlatList } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, FlatList, TouchableOpacity } from 'react-native';
 import CatergoryListItem from "../Component/CatergoryListItem";
 
 import atom from "../assets/atom.png";
@@ -30,6 +30,11 @@ export default function categories({ navigation }) {
                     keyExtractor={item => `${item.id}`}
                     contentContainerStyle={{ paddingLeft: 16, paddingRight: 16 }}
                 />
+                <TouchableOpacity onPress={() => {
+                    navigation.navigate('WHEELOFFORTUNE')
+                }} style={styles.button}>
+                    <Text>Vòng quay nhân phẩm</Text>
+                </TouchableOpacity>
             </ScrollView>
             <StatusBar style="auto" />
         </View>
@@ -45,4 +50,9 @@ const styles = StyleSheet.create({
         paddingLeft: 16,
         paddingRight: 16
     },
+    button: {
+        alignItems: "center",
+        backgroundColor: "#DDDDDD",
+        padding: 10
+      },
 });

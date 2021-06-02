@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import category from './screen/category';
 import categories from './screen/categories';
+import wheeloffortune from './screen/wheeloffortune';
 
 
 
@@ -18,6 +19,7 @@ export default function App() {
       <Stack.Navigator initialRouteName="categories">
         <Stack.Screen name="CATEGORIES" component={categories} />
         <Stack.Screen name="CATEGORY" component={category} />
+        <Stack.Screen name="WHEELOFFORTUNE" component={wheeloffortune} />
       </Stack.Navigator>
     </NavigationContainer>
   );
