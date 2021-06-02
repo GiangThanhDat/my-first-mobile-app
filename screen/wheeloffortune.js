@@ -92,7 +92,6 @@ class wheeloffortune extends Component {
   }
 }
 
-
 export default wheeloffortune;
 
 const styles = StyleSheet.create({
