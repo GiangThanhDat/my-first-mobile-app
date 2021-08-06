@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, ScrollView, FlatList, TouchableOpacity } from 'react-native';
-import CatergoryListItem from "../Component/CatergoryListItem";
+import CategoryListItem from "../Component/CategoryListItem";
 
 import atom from "../assets/atom.png";
 import drink from "../assets/drink.png";
@@ -22,7 +22,7 @@ export default function categories({ navigation }) {
                 {/* FlastList giống như map */}
                 <FlatList
                     data={categories}
-                    renderItem={({ item }) => <CatergoryListItem catItem={item}
+                    renderItem={({ item }) => <CategoryListItem catItem={item}
                         onPress={() => {
                             navigation.navigate('CATEGORY', { id: item.id })
                         }}

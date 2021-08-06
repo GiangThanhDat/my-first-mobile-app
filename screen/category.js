@@ -5,7 +5,7 @@ import { View, Text } from 'react-native';
 import atom from "../assets/atom.png";
 import drink from "../assets/drink.png";
 import burger from "../assets/burger.png";
-import CatergoryListItem from '../Component/CatergoryListItem';
+import CategoryListItem from '../Component/CategoryListItem';
 
 
 function category({ route }) {
@@ -38,7 +38,7 @@ function category({ route }) {
 
     return ( 
         <View >
-            <CatergoryListItem catItem = { getCategory(id) }/> 
+            <CategoryListItem catItem = { getCategory(id) }/> 
         </View>
     )
 }

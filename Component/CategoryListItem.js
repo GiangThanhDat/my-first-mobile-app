@@ -1,7 +1,7 @@
 import React from 'react'
 import { Image, Text, View, StyleSheet, TouchableOpacity, Alert } from 'react-native';
 import burger from "../assets/burger.png";
-function CatergoryListItem({ catItem, onPress }) {
+function CategoryListItem({ catItem, onPress }) {
     const { name, img, text } = catItem;
     // console.log(catItem);
     return (
@@ -10,7 +10,7 @@ function CatergoryListItem({ catItem, onPress }) {
             onPress={onPress} >
             <View style={style.container}>
                 <Text style={style.title}>{name}</Text>
-                <Image style={style.catergoryImage} source={img} />
+                <Image style={style.categoryImage} source={img} />
                 <Text>{text}</Text>
             </View>
         </TouchableOpacity>
@@ -30,7 +30,7 @@ const style = StyleSheet.create({
         shadowRadius: 15,
         shadowOffset: { width: 0, height: 0 }
     },
-    catergoryImage: {
+    categoryImage: {
         width: 64,
         height: 64
     },
@@ -41,4 +41,4 @@ const style = StyleSheet.create({
     }
 });
 
-export default CatergoryListItem
+export default CategoryListItem
